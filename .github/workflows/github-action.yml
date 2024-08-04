@@ -13,10 +13,7 @@ jobs:
     
     steps:
       - name: Checkout repository code
-        uses: actions/checkout@v4
-      
-      - name: Install dependencies
-        run: npm install     
+        uses: actions/checkout@v4 
       
       - name: Run super-linter
         run: github/super-linter@v3

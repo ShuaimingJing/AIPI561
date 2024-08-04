@@ -37,11 +37,14 @@ jobs:
         run: npm test
         # Points for running unit tests
 
-      # Optional: Lint Dockerfile
+      # Optional: Lint Dockerfile using a script
+      - name: Set up hadolint
+        run: |
+          wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v2.6.0/hadolint-Linux-x86_64
+          chmod +x /bin/hadolint
+
       - name: Lint Dockerfile
-        uses: hadolint/hadolint-action@v1
-        with:
-          dockerfile: ./Dockerfile
+        run: hadolint Dockerfile
         # Points for optional Dockerfile linting
 
       # Build Docker image

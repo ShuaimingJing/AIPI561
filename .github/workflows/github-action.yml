@@ -1,16 +1,58 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      # Checkout the code
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.8'
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install
+        # Points for installing CI/CD toolchain/dependencies
 
-    - name: Install dependencies
-      run: |
-        pip install -r requirements.txt
+      # Formatting
+      - name: Run code formatter
+        run: npm run format
+        # Points for formatting
+
+      # Linting
+      - name: Run linter
+        run: npm run lint
+        # Points for linting
+
+      # Run unit tests
+      - name: Run unit tests
+        run: npm test
+        # Points for running unit tests
+
+      # Optional: Lint Dockerfile
+      - name: Lint Dockerfile
+        uses: hadolint/hadolint-action@v1
+        with:
+          dockerfile: ./Dockerfile
+        # Points for optional Dockerfile linting
+
+      # Build Docker image
+      - name: Build Docker image
+        run: docker build -t my-image-name .
+        # Points for building the Docker image
+
+      # Push Docker image to registry
+      - name: Log in to Docker Hub
+        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+
+      - name: Push Docker image
+        run: docker push my-image-name
+        # Points for pushing the Docker image

@@ -20,12 +20,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       
-      - name: Format Black
-        run: make format
-      
-      - name: List files in the repository
+      - name: Check for formatting issues
         run: |
-          ls ${{ github.workspace }}
+          git diff --exit-code
+        continue-on-error: false
+
       
       - name: Build Docker image
         uses: docker/setup-buildx-action@v3

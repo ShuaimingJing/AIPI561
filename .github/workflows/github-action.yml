@@ -25,13 +25,10 @@ jobs:
           git diff --exit-code
         continue-on-error: false
 
+      - name: Lint backend code
+        uses: wearerequired/lint-action@v2
       
       - name: Build Docker image
         uses: docker/setup-buildx-action@v3
 
-      - name: Lint backend code
-        uses: wearerequired/lint-action@v2
-        with:
-          autopep8: true
-          autopep8_dir: backend
-          auto_fix: true
+

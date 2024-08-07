@@ -11,8 +11,8 @@ The Veterinary Large Language Model (LLM) aims to leverage advancements in artif
 
 ## Usage Examples & Screenshots
 
-<img src="https://github.com/ShuaimingJing/AIPI561/blob/main/assets/use1.png" width="256"/>
-
+<img src="https://github.com/ShuaimingJing/AIPI561/blob/main/assets/use1.png" width="512"/>
+<img src="https://github.com/ShuaimingJing/AIPI561/blob/main/assets/use2.png" width="512"/>
 
 ## How to Set Up
 1. Download [mistral-7b-instruct-v0.2.Q4_0.llamafile](https://huggingface.co/Mozilla/Mistral-7B-Instruct-v0.2-llamafile/resolve/main/mistral-7b-instruct-v0.2.Q4_0.llamafile?download=true)(3.85GB)

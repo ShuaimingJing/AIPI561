@@ -11,4 +11,5 @@ pinecone-plugin-inference==1.0.2
 pinecone-plugin-interface==0.0.7
 requests==2.32.3
 scikit-learn==1.5.1
+streamlit==1.31.1
 

@@ -30,7 +30,7 @@ jobs:
      
       - name: Run tests
         run: |
-          PYTHONPATH= test.py
+          PYTHONPATH= python test.py
       
       - name: Build Docker image
         uses: docker/setup-buildx-action@v3

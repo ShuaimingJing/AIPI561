@@ -6,13 +6,13 @@
 The Veterinary Large Language Model (LLM) aims to leverage advancements in artificial intelligence and natural language processing to develop a specialized model for veterinary medicine. This project focuses on creating a model capable of understanding and generating human-like text in the context of veterinary diagnostics, treatment, and general animal healthcare. The ultimate goal is to enhance the accessibility and quality of veterinary care through intelligent, context-aware, and responsive AI-driven solutions.
 
 ## System Architecture
-
+<img src="https://github.com/ShuaimingJing/AIPI561/blob/main/assets/architecture.png" width="1024"/>
 
 
 ## Usage Examples & Screenshots
 
-<img src="https://github.com/ShuaimingJing/AIPI561/blob/main/assets/use1.png" width="512"/>
-<img src="https://github.com/ShuaimingJing/AIPI561/blob/main/assets/use2.png" width="512"/>
+<img src="https://github.com/ShuaimingJing/AIPI561/blob/main/assets/use1.png" width="1024"/>
+<img src="https://github.com/ShuaimingJing/AIPI561/blob/main/assets/use2.png" width="1024"/>
 
 ## How to Set Up
 1. Download [mistral-7b-instruct-v0.2.Q4_0.llamafile](https://huggingface.co/Mozilla/Mistral-7B-Instruct-v0.2-llamafile/resolve/main/mistral-7b-instruct-v0.2.Q4_0.llamafile?download=true)(3.85GB)

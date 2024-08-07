@@ -11,7 +11,7 @@ The Veterinary Large Language Model (LLM) aims to leverage advancements in artif
 
 ## Usage Examples & Screenshots
 
-<img src="https://github.com/ShuaimingJing/AIPI561/blob/main/assets/use1.png" width="128"/>
+<img src="https://github.com/ShuaimingJing/AIPI561/blob/main/assets/use1.png" width="256"/>
 
 
 ## How to Set Up

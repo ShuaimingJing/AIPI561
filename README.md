@@ -43,6 +43,20 @@ chmod +x mistral-7b-instruct-v0.2.Q4_0.llamafile
 7. When you're done chatting, return to your terminal and hit
    `Control-C` to shut down llamafile.
 
+8. Clone this repository
+
+9. Install the dependenicies.
+```sh
+pip install -r requirements.txt
+```
+## Run the Application
+After installing all dependenicies, run rag.py. Then start Streamlit frontend using 
+```sh
+streamlit run rag
+```
+
+To test the application, run test.py
+
 ## Performance & Evaluation
 The evaluation of Veterinary LLM consists of two parts: **Latency** and **Accuracy**. 10 questions are selected to test the performance. Latency measures the time taken by the LLM to generate responses. Then human-evaluation is used to measure the accuracy of the generated responses. The selected questions are being asked to Veterinary LLM, based model (Mistral-7B), and GPT-4o. Accuray has 10 ranks: 1-10, 10 being the highest.
 

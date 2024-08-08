@@ -6,6 +6,9 @@
 ## Project Overview
 The Veterinary Large Language Model (LLM) aims to leverage advancements in artificial intelligence and natural language processing to develop a specialized model for veterinary medicine. This project focuses on creating a model capable of understanding and generating human-like text in the context of veterinary diagnostics, treatment, and general animal healthcare. The ultimate goal is to enhance the accessibility and quality of veterinary care through intelligent, context-aware, and responsive AI-driven solutions.
 
+## Model Selection
+Mistral 7B has been trained on extensive datasets, providing robust language understanding capabilities. This ensures that the model can generate contextually accurate and coherent responses, which is crucial for applications like Veterinary LLM. The model's ability to generalize across various topics, including specialized domains like veterinary medicine, makes it a versatile choice for different use cases. The Mistral 7B model, with its 7 billion parameters, offers a good balance between model size and computational performance. Larger models, such as those with tens or hundreds of billions of parameters, may provide marginally better performance but require significantly more computational resources and memory. For a local setup, inference speed is critical. A model like Mistral 7B is capable of delivering high-quality results with relatively fast inference times, making it suitable for real-time applications.
+
 ## System Architecture
 <img src="https://github.com/ShuaimingJing/AIPI561/blob/main/assets/architecture.png" width="1024"/>
 

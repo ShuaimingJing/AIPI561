@@ -95,3 +95,20 @@ J. Why is the width of red blood cells and platelet ratios in the cubs?
 **Performance Conclusion:** 
 The average latency is about 18s for each question, which is higher than I expected. This is probably because the model is ran locally rather than on cloud. According to the table for accuracy test, the base model has the worst performance. GPT 4o has slightly higher performance than Veterinary LLM. Since the RAG pipeline is built on the base model, as we can see the performance improved a lot using RAG.
 
+## Conclusion for This Project
+**Technology and framework used:**
+
+1. LangChain: For text splitting and embedding management.
+2. OpenAI API: For generating embeddings and providing LLM capabilities.
+3. Pinecone: Vector database for storing and retrieving document embeddings.
+4. Streamlit: For creating an interactive and user-friendly web application.
+5. Docker: For containerizing the application to ensure consistency across different environments.
+
+**Key Accomplishments:**
+
+Risk-Taking and Learning: Ventured into new territories by integrating LangChain, OpenAI, and Pinecone into a cohesive RAG system. Learn about how CI/CD pipeline works and how to automate it using GitHub Actions.
+
+Beyond Minimum Requirements: Developed a full-fledged, containerized web application and automated its deployment using Docker and GitHub Actions.
+
+
+Innovative Solution: Leveraged state-of-the-art technologies to build a sophisticated Veterinary LLM capable of providing contextually relevant responses to complex queries.

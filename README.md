@@ -52,7 +52,7 @@ pip install -r requirements.txt
 ## Run the Application
 After installing all dependenicies, run rag.py. Then start Streamlit frontend using 
 ```sh
-streamlit run rag
+streamlit run rag.py
 ```
 
 To test the application, run test.py

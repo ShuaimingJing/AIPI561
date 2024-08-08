@@ -1,5 +1,6 @@
 # Veterinary LLM
 [![Build and Push Docker image](https://github.com/ShuaimingJing/AIPI561/actions/workflows/docker.yml/badge.svg)](https://github.com/ShuaimingJing/AIPI561/actions/workflows/docker.yml)
+[![github-action](https://github.com/ShuaimingJing/AIPI561/actions/workflows/github-action.yml/badge.svg)](https://github.com/ShuaimingJing/AIPI561/actions/workflows/github-action.yml)
 ## Video Demo
 [Clike Here](https://youtu.be/63Jtx7NCO-Q)
 ## Project Overview

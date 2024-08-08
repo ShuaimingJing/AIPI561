@@ -92,5 +92,5 @@ J. Why is the width of red blood cells and platelet ratios in the cubs?
 |average|7.3|5.7|7.5
 
 **Performance Conclusion:** 
-The average latency is about 28s for each question, which is higher than I expected. This is probably because the model is ran locally rather than on cloud. According to the table for accuracy test, the base model has the worst performance. GPT 4o has slightly higher performance than Veterinary LLM. Since the RAG pipeline is built on the base model, as we can see the performance improved a lot using RAG.
+The average latency is about 18s for each question, which is higher than I expected. This is probably because the model is ran locally rather than on cloud. According to the table for accuracy test, the base model has the worst performance. GPT 4o has slightly higher performance than Veterinary LLM. Since the RAG pipeline is built on the base model, as we can see the performance improved a lot using RAG.
 

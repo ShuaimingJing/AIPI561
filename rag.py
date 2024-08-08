@@ -206,13 +206,10 @@ def UI():
         top_3_indices = semantic_search(query_vector, vectors_list)
         context = get_text(embedding_data, top_3_indices)
 
-    # Check if the question is sumbitedd by users
+    # Check if the question is sumbited by users
     if submitted:
-        st.text("Response with RAG:")
+        st.text("Veterinary LLM's response:")
         st.write(generate_response_rag(user_input,context))
-        st.text("Response without RAG:")
-        st.write(generate_response(user_input))
-
 
 
 if __name__ == "__main__":
